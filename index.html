@@ -3,18 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index - Assignment #1</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        body {
+            background-color: rgb(255, 254, 242);
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background-color: rgb(80, 86, 85);
+            padding: 10px;
+            position: sticky;
+            
+            }
+
+        header h1 {
+            text-align: center;
+            color: white;
+            font-family: "Montserrat";
+            font-size: 50px;
+
+        }
+
+
+        main p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        img {
+            border-radius: 10px;
+            width: 300px
+            
+        }
+
+        .single-img{
+            margin: 20px;
+            border-radius: inherit;
+        }
+
+        /* to add an effect to the image */
+
+        .single-img a img {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  /* html not covered in class */
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* html not covered in class */
+        }
+
+
+        .single-img a:hover img {
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);  /* html not covered in class */
+            opacity: 0.7; 
+            transform: scale(1.1); 
+        }
+
+
+        .subpage {
+            text-align: center;
+        }
+
+        .subpage p{
+            font-size: small;
+
+        }
+
+        footer {
+            background-color: rgb(80, 86, 85);
+            padding: 5px;
+        }
+
+        footer p {
+            color: white;
+            font-size: small;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <hl>Welcome to my site!</hl>
+     
+    <body>
+        <header>
+            <h1>Our Profile's Hub</h1>
+        </header>
 
-    <p>Angela Monares</p>
-    <br>
-    <p>Student Id number</p>
-    <br>
-    <p>Date: January 27,2025</p>
+        <main>
+                <div>
+                    <p>Welcome to our profile hub! <br> Here, you can get to know us by browsing through our background, interests, and other information about ourselves. <br> We invite you to take a closer look and connect with us on a deeper level!</p>
+                </div>
+
+            <div class="container">
+                <div class="subpage"><h2>Cidney's Profile</h2>
+                    <p>Click the photo to visit!</p>
+                    <div class="single-img">
+                        <a href="cidney_subpage.html">
+                            <img src="cidney_photo.jpg" alt="Cidney profile photo">
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="subpage"><h2>Idara's Profile</h2>
+                    <p>Click the photo to visit!</p>
+                    <div class="single-img">
+                        <a href="Ekong_Idara_Assignment1.html">
+                            <img src="idara_photo.jpeg" alt="Idara profile photo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="subpage"><h2>Angela's Profile</h2>
+                    <p>Click the photo to visit!</p>
+                    <div class="single-img">
+                        <a href="angela_subpage.html">
+                            <img src="angela_photo.JPG" alt="Angela profile photo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>CPRO 1101 Assignment #1 | Page created by Group 12: Cidney Besa, Idara Ekong, Angela Monares</p>
+        </footer>
     </body>
-
-</header>
 </html>
+
