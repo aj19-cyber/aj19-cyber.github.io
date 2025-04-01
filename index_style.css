@@ -1,0 +1,85 @@
+body {
+            background-color: rgb(255, 254, 242);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightgrey;
+            padding: 10px;
+        }
+
+        header h1 {
+            text-align: center;
+            color: black;
+            font-family: "Montserrat";
+            font-size: 50px;
+
+        }
+
+
+        main p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+
+
+        img {
+            border-radius: 10px;
+            width: 300px
+            
+        }
+
+        .single-img{
+            margin: 20px;
+            border-radius: inherit;
+        }
+
+        /* to add an effect to the image */
+
+        .single-img a img {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+
+        .single-img a:hover img {
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);  
+            opacity: 0.7; 
+            transform: scale(1.1); 
+        }
+
+
+        .subpage {
+            text-align: center;
+        }
+
+        .subpage p{
+            font-size: small;
+
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        footer p {
+            color: black;
+            font-size: small;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .flex-container {
+              flex-direction: column;
+            }
+          }
