@@ -1,0 +1,104 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .header, .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .header {
+    height: 70px;
+  }
+  
+  .footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container-fluid {
+    position: absolute;
+    top: 70px; /* height of header */
+    bottom: 50px; /* height of footer */
+    width: 100%;
+    display: flex;
+  }
+  
+  aside {
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    padding: 20px;
+    width: 25%;
+  }
+  
+  main {
+    padding: 30px;
+    background-color: #ffffff;
+    width: 75%;
+    overflow-y: auto;
+  }
+  .userInput {
+    margin-bottom:1rem;
+  }
+  
+  .pickCat {
+    margin-bottom: 1rem;
+  }
+  
+  title {
+    margin-bottom: 1.5rem;
+  }
+  
+  #post1, #post2, #post3 {
+    margin-bottom: 1.5rem;
+    padding:20px;
+    background-color:#dee2e6;
+    border-radius: 8px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul.list-group a {
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .container-fluid {
+      flex-direction: column;
+    }
+  
+    header {
+      position:fixed;
+    }
+    aside {
+      position: fixed;
+      top: 80px;
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      overflow-y: hidden;
+      padding: 10px;
+    }
+  
+    main {
+      position: absolute;
+      top: 160px; /* adjust depending on sidebar height */
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      overflow-y: auto;
+      background-color: #fff;
+      padding: 15px;
+    }
+  }
