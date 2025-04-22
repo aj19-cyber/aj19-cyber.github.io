@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Travis' Cat Family</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index_styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-container">
+                        <i class="fas fa-cat logo-icon"></i>
+                        <h1 class="site-title">Travis' Cat Family</h1>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                            <li class="nav-item"><a href="maxwell.html" class="nav-link">Maxwell</a></li>
+                            <li class="nav-item"><a href="mona.html" class="nav-link">Mona</a></li>
+                            <li class="nav-item"><a href="tenley.html" class="nav-link">Tenley</a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <h5>Blog Posts</h5>
+                    <nav class="side-nav">
+                        <ul class="side-nav-list">
+                            <li class="nav-item"><a href="#section-header-1" class="side-nav-link">Mona and Tenley Fighting</a></li>
+                            <li class="nav-item"><a href="#section-header-2" class="side-nav-link">Traveling</a></li>
+                            <li class="nav-item"><a href="#section-header-3" class="side-nav-link">Space Making Post</a></li>
+                        </ul>
+                    </nav>
+                    <div class="form-survey">
+                        <h4>Vote for Your Favorite Cat</h4>
+                        <form id="pollForm">
+                            <div class="userInput">
+                                <label for="userName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="userName" required>
+                            </div>
+                            <div class="pickCat">
+                                <label for="catChoice" class="form-label">Favourite Cat</label>
+                                <select class="form-select" id="catChoice" required>
+                                <option value="" disabled selected> Select your favourite cat</option>
+                                <option value="Mona">Mona</option>
+                                <option value="Tenley">Tenley</option>
+                                <option value="Maxwell">Maxwell</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Vote</button>
+                        </form>
+                        <div id="pollResults" class="mt-4 d-none">
+                            <h5>Current Results:</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">Mona: <span id="monaVotes">0</span></li>
+                                <li class="list-group-item">Tenley: <span id="tenleyVotes">0</span></li>
+                                <li class="list-group-item">Maxwell: <span id="maxwellVotes">0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </aside>
+
+            <main class="main-content">
+                <div class="container">
+                    <div class="page-header">
+                        <h2 class="blog-post dark-text">Travis' Cat Family Blog Posts</h2>
+                    </div>
+                    
+                    <div class="blog-section">
+                        <div id="section-header-1">
+                            <h3 class="section-title">Mona and Tenley Fighting</h3>
+                            <div class="blog-tags">
+                                <span class="badge rounded-pill bg-primary">New!</span>
+                                <span class="badge rounded-pill bg-info">Short</span>
+                                <span class="badge rounded-pill bg-info">Mona</span>
+                                <span class="badge rounded-pill bg-info">Tenley</span>
+                                <span class="badge rounded-pill bg-info">English</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-text">
+                                <p>Gosh, they sure do love to fight a lot – their personalities just clash. 
+                                Mona is so anxious and shy all the time, and Tenley is young and rambunctious and loves to play, 
+                                so they just don’t get along sometimes! I’ve tried many things to help, but the best thing to do is to have 
+                                my partner and I play with each of them separately and give them lots of cuddles – that does the trick! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-section">
+                        <div id="section-header-2">
+                            <h3 class="section-title">Traveling</h3>
+                            <div class="blog-tags">
+                                <span class="badge rounded-pill bg-info">Short</span>
+                                <span class="badge rounded-pill bg-info">Tenley</span>
+                                <span class="badge rounded-pill bg-info">English</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-text">
+                                <p>Gosh, they sure do love to fight a lot – their personalities just clash. 
+                                Mona is so anxious and shy all the time, and Tenley is young and rambunctious and loves to play, 
+                                so they just don’t get along sometimes! I’ve tried many things to help, but the best thing to do is to have 
+                                my partner and I play with each of them separately and give them lots of cuddles – that does the trick! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-section">
+                        <div id="section-header-3">
+                            <h3 class="section-title">Space Making Post</h3>
+                            <div class="blog-tags">
+                                <span class="badge rounded-pill bg-info">Long</span>
+                                <span class="badge rounded-pill bg-info">Maxwell</span>
+                                <span class="badge rounded-pill bg-info">Latin</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-text">
+                                <p>This is just to test your layout. It’s a bunch of lorem ipsum, which Maxwell spoke fluently.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas lobortis arcu, nec mattis diam consectetur at. 
+                                Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum imperdiet eget nibh. Donec elit erat, 
+                                finibus vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et lorem gravida, commodo accumsan magna posuere. Proin sodales egestas pellentesque. 
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a nibh at est condimentum porttitor ut quis est. 
+                                Donec accumsan lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse potenti. Sed mollis egestas tempus. Duis a lectus libero. Nam sed est turpis. 
+                                Nunc justo arcu, feugiat quis elit eu, cursus euismod mi. Curabitur rutrum nisl libero, in elementum neque volutpat euismod. Mauris semper sollicitudin purus nec tempus.</p>
+
+                                <p>Ut mattis nulla sem, ac tristique est aliquam et. Maecenas lorem velit, ornare quis aliquam sed, viverra vitae diam. Duis et sem mi. Praesent pretium nisi interdum, ullamcorper nisl non, 
+                                pharetra orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper sit amet quam ac tincidunt. Proin eget faucibus nisi. Donec finibus facilisis felis non consectetur. 
+                                Aliquam quis volutpat tellus, vitae condimentum urna. Praesent vitae augue fringilla, pretium eros vel, ultrices lectus.</p>
+
+                                <p>Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse aliquet convallis sapien, ut pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus.</p>
+
+                                <p>Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed ullamcorper felis at eros facilisis, nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet facilisis sapien. Vivamus et massa tempor, mollis risus sit amet, elementum ipsum. 
+                                Aliquam massa quam, maximus vitae congue ac, pretium a sapien. Nullam faucibus neque a libero feugiat pharetra. In quis turpis eu metus pharetra volutpat. Mauris nisi felis, hendrerit sit amet erat at, interdum lobortis nisi. Maecenas at nulla at eros varius vehicula. 
+                                Mauris mollis sem orci, vel fermentum dui aliquet a. Etiam tristique sit amet velit eget iaculis. In ultrices volutpat dignissim. In mollis eros at ipsum convallis tempor. Fusce at orci ac mi elementum sollicitudin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+                
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <p>&copy; 2025 Created by Group 12</p>
+                        <p>Images supplied by Travis Cattington</p>
+                    </div>
+                    <div class="cat-colors">
+                        <span class="color-dot magenta" title="Mona - Magenta"></span>
+                        <span class="color-dot brown" title="Tenley - Brown"></span>
+                        <span class="color-dot red" title="Maxwell - Red"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const votes = {
+            Mona: 0,
+            Tenley: 0,
+            Maxwell: 0
+        };
+
+        const votedUsers = new Set();
+        
+        document.getElementById('pollForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value.trim();
+            const choice = document.getElementById('catChoice').value;
+
+            if (votedUsers.has(name.toLowerCase())) {
+            alert('You have already voted!');
+            return;
+            }
+
+            votedUsers.add(name.toLowerCase());
+            votes[choice]++;
+            
+            document.getElementById('monaVotes').innerText = votes.Mona;
+            document.getElementById('tenleyVotes').innerText = votes.Tenley;
+            document.getElementById('maxwellVotes').innerText = votes.Maxwell;
+            document.getElementById('pollResults').classList.remove('d-none');
+        });
+
+        document.getElementById('userName').addEventListener('input', function () {
+            document.getElementById('pollResults').classList.add('d-none');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
